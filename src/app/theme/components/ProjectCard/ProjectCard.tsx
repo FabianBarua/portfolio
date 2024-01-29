@@ -61,8 +61,8 @@ const ProjectCard: FC<IProjectCard> = ({
 					</div>
 				</div>
 				<img
-					className={`absolute saturate-50 -right-10 w-full top-48 rounded-2xl object-cover z-[1] transition-all duration-300 lg:-right-12 lg:top-48 ${
-						hovering && 'scale-[1.025] saturate-150'
+					className={`absolute   ${ hovering ? 'saturate-150' :'saturate-50'}  -right-10 w-full top-48 rounded-2xl object-cover z-[1] transition-all duration-300 lg:-right-12 lg:top-48 ${
+						hovering && 'scale-[1.025] '
 					}`}
 					src={screenShot}
 					alt={project_name}
