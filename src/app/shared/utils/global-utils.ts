@@ -41,7 +41,7 @@ export const Projects: IProjectCard[] = [
 		demoLink: 'https://quanta.com.py/',
 		className: 'lg:row-span-2 xl:col-span-4',
 		index: 2,
-		technologies: ['Photoshop', 'Figma', 'JS', 'CSS', 'PHP'],
+		technologies: ['Photoshop', 'Figma', 'JS', 'CSS', 'Video Edits', 'Corel'],
 	},
 	{
 		id: uuid(),
@@ -52,7 +52,7 @@ export const Projects: IProjectCard[] = [
 		className: 'lg:row-span-3 xl:col-span-4',
 		isPrivate: false,
 		index: 3,
-		technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Next.js'],
+		technologies: ['Photoshop', 'Blender', 'After Effects', 'Illustrator'],
 	},
 
 ]
