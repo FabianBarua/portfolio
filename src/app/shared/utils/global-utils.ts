@@ -101,51 +101,51 @@ export const DevTools: IDevToolsElement[] = [
 	{
 		id: uuid(),
 		name: 'Photoshop',
-		icon: '/src/assets/photoshop.svg',
+		icon: '/logos/photoshop.svg',
 	},
 	{
 		id: uuid(),
 		name: 'After-Effects',
-		icon: '/src/assets/ae.svg',
+		icon: '/logos/ae.svg',
 	},
 	{
 		id: uuid(),
 		name: 'Premiere-Pro',
-		icon: '/src/assets/premiere.svg',
+		icon: '/logos/premiere.svg',
 	},
 	{
 		id: uuid(),
 		name: 'InDesign',
-		icon: '/src/assets/indesign.svg',
+		icon: '/logos/indesign.svg',
 	},
 	{
 		id: uuid(),
 		name: 'Canva',
-		icon: '/src/assets/canva.svg',
+		icon: '/logos/canva.svg',
 	},
 	{
 		id: uuid(),
 		name: 'Figma',
-		icon: '/src/assets/figma.svg',
+		icon: '/logos/figma.svg',
 	},
 	{
 		id: uuid(),
 		name: 'Illustrator',
-		icon: '/src/assets/illustrator.svg',
+		icon: '/logos/illustrator.svg',
 	},
 	{
 		id: uuid(),
 		name: 'Adobe',
-		icon: '/src/assets/adobe.svg',
+		icon: '/logos/adobe.svg',
 	},
 	{
 		id: uuid(),
 		name: 'CorelDraw',
-		icon: '/src/assets/corel.svg',
+		icon: '/logos/corel.svg',
 	},
 	{
 		id: uuid(),
 		name: 'Blender',
-		icon: '/src/assets/blender.svg',
+		icon: '/logos/blender.svg',
 	},
 ]
