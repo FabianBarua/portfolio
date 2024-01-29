@@ -11,10 +11,11 @@ import zomo from '../../../assets/zomo.svg'
 import quanta_bg from '../../../assets/quantaBG.webp'
 import quanta from '../../../assets/quanta.svg'
 
-import alphaplay_bg from '../../../assets/esperanza_bg.webp'
-import alphaplay from '../../../assets/alpha.png'
+import alphaplay_bg from '../../../assets/alphaplay_bg.webp'
+import alphaplay from '../../../assets/alphaplay.svg'
 
-import freelance_bg from '../../../assets/freelance_bg.webp'
+import alphasat_bg from '../../../assets/alphasat_bg.webp'
+import alphasat from '../../../assets/alphasat.svg'
 
 
 import zomoIG from '../../../assets/zomoIG.webp'
@@ -87,12 +88,12 @@ export const Experiences: IExperienceCard[] = [
 
 	{
 		id: uuid(),
-		company_logo: alphaplay,
+		company_logo: alphasat,
 		company_name: 'Alphasat',
 		position_name: 'Content Creator Senior',
 		dates: 'experience-section.companies.alphasat.dates',
 		url_site: 'https://alphasat.pro/',
-		background_url: freelance_bg,
+		background_url: alphasat_bg,
 	},
 
 ]
