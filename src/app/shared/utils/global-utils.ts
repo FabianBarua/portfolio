@@ -15,7 +15,7 @@ import alphaplay_bg from '../../../assets/esperanza_bg.webp'
 import alphaplay from '../../../assets/alpha.png'
 
 import freelance_bg from '../../../assets/freelance_bg.webp'
-import freelance from '../../../assets/freelance.png'
+
 
 import zomoIG from '../../../assets/zomoIG.webp'
 import quantaWeb from '../../../assets/quantaWeb.webp'
