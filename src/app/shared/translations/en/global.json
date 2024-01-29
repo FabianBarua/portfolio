@@ -1,0 +1,51 @@
+{
+  "about-section": {
+    "title": "About me",
+    "description": "I consider myself a detail-oriented and creative person, always striving for excellence in my work."
+  },
+  "experience-box": {
+    "title": "Years of Experience"
+  },
+  "location-box": {
+    "title": "From Ciudad del Este, PY"
+  },
+  "projects-section": {
+    "title": "Projects",
+    "description": "Some of the projects I have worked on:",
+    "work-experience": "Work Experience",
+    "personal-experience": "Personal Experience",
+    "projects": {
+      "zomo": "Launch of a new product (Tutti Frutti)",
+      "quanta": "Innovation in electronic technology.",
+      "alphaplay": "Leading brand in Brazilian TV receivers."
+    }
+  },
+  "technologies-section": {
+    "title": "Technologies",
+    "description": "Some of the technologies I have used:"
+  },
+  "experience-section": {
+    "title": "Experience",
+    "description": "I have worked on projects for companies such as:",
+    "companies": {
+      "zomo": {
+        "dates": "Freelance"
+      },
+      "quanta": {
+        "dates": "2022 - 2024"
+      },
+      "alphaplay": {
+        "dates": "2023 - 2024"
+      },
+      "alphasat": {
+        "dates": "2023 - 2024"
+      }
+    }
+  },
+  "others-translations": {
+    "degree": "Graphic Designer - Video Editor",
+    "visit": "Visit",
+    "copy-right": "All rights reserved",
+    "last-update": "Last update: January 28, 2024"
+  }
+}

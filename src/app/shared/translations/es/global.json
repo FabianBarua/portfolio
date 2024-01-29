@@ -1,0 +1,51 @@
+{
+  "about-section": {
+    "title": "Sobre mi",
+    "description": "Me considero una persona detallista y creativa, y siempre busco la excelencia en mi trabajo."
+  },
+  "experience-box": {
+    "title": "Años de experiencia"
+  },
+  "location-box": {
+    "title": "De Ciudad del Este, PY"
+  },
+  "projects-section": {
+    "title": "Proyectos",
+    "description": "Algunos de los proyectos en los que he trabajado:",
+    "work-experience": "Experiencia laboral",
+    "personal-experience": "Experiencia personal",
+    "projects": {
+      "zomo": "Lanzamiento de nuevo producto (Tutti Frutti)",
+      "quanta": "Innovación en tecnología electrónica.",
+      "alphaplay": "Marca lider en receptores de Tv Brasilera."
+    }
+  },
+  "technologies-section": {
+    "title": "Tecnologías",
+    "description": "Algunas de las tecnologías que he utilizado:"
+  },
+  "experience-section": {
+    "title": "Experiencia",
+    "description": "He trabajado en proyectos para empresas como:",
+    "companies": {
+      "zomo": {
+        "dates": "Freelance"
+      },
+      "quanta": {
+        "dates": "2022 - 2024"
+      },
+      "alphaplay": {
+        "dates": "2023 - 2024"
+      },
+      "alphasat": {
+        "dates": "2023 - 2024"
+      }
+    }
+  },
+  "others-translations": {
+    "degree": "Diseñador Gráfico - Editor de videos",
+    "visit": "Visita",
+    "copy-right": "Todos los derechos reservados",
+    "last-update": "Última actualización: 28 de Enero de 2024"
+  }
+}
