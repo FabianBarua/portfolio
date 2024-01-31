@@ -15,9 +15,10 @@
     "work-experience": "Experiencia laboral",
     "personal-experience": "Experiencia personal",
     "projects": {
-      "zomo": "Lanzamiento de nuevo producto (Tutti Frutti)",
+      "zomo": "Lanzamiento de nuevos productos.",
       "quanta": "Innovación en tecnología electrónica.",
-      "alphaplay": "Marca lider en receptores de Tv Brasilera."
+      "alphaplay": "Marca lider en receptores de Tv Brasilera.",
+      "proyects": "Mis proyectos más recientes."
     }
   },
   "technologies-section": {

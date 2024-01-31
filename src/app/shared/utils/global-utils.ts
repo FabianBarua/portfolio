@@ -21,7 +21,7 @@ import alphasat from '../../../assets/alphasat.svg'
 import zomoIG from '../../../assets/zomoIG.webp'
 import quantaWeb from '../../../assets/quantaWeb.webp'
 import alphaplayWeb from '../../../assets/alphaplayWeb.webp'
-
+import proyectsBG from '../../../assets/proyectsBG.webp'
 
 export const Projects: IProjectCard[] = [
 	{
@@ -30,10 +30,11 @@ export const Projects: IProjectCard[] = [
 		description: 'projects-section.projects.zomo',
 		screenShot: zomoIG,
 		demoLink: 'https://www.instagram.com/zomoofficial/',
-		className: 'lg:row-span-5 xl:col-span-4 h-full',
+		className: 'lg:row-span-3 xl:col-span-4 h-full',
 		index: 1,
 		technologies: ['Photoshop', 'After effects', 'Premiere Pro'],
 	},
+
 	{
 		id: uuid(),
 		project_name: 'Quanta',
@@ -44,13 +45,25 @@ export const Projects: IProjectCard[] = [
 		index: 2,
 		technologies: ['Photoshop', 'Figma', 'JS', 'CSS', 'Video Edits', 'Corel'],
 	},
+	
+	{
+		id: uuid(),
+		project_name: 'Proyects',
+		description: 'projects-section.projects.proyects',
+		screenShot: proyectsBG,
+		demoLink: 'https://drive.google.com/drive/folders/1l-t2g-tUKtDJ2UvH0Tl1qtzb414VO6JH?usp=sharing',
+		className: 'lg:row-span-3 xl:col-span-4',
+		isPrivate: true,
+		index: 3,
+		technologies: ['Photoshop', 'Blender', 'After Effects', 'Illustrator', 'Corel ...', ],
+	},
 	{
 		id: uuid(),
 		project_name: 'Alphaplay',
 		description: 'projects-section.projects.alphaplay',
 		screenShot: alphaplayWeb,
 		demoLink: 'https://alphaplay.tv',
-		className: 'lg:row-span-3 xl:col-span-4',
+		className: 'lg:row-span-2 xl:col-span-4',
 		isPrivate: false,
 		index: 3,
 		technologies: ['Photoshop', 'Blender', 'After Effects', 'Illustrator'],
