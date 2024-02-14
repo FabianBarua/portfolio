@@ -51,7 +51,7 @@ export const Projects: IProjectCard[] = [
 		project_name: 'Proyects',
 		description: 'projects-section.projects.proyects',
 		screenShot: proyectsBG,
-		demoLink: 'https://drive.google.com/drive/folders/1l-t2g-tUKtDJ2UvH0Tl1qtzb414VO6JH?usp=sharing',
+		demoLink: 'https://bit.ly/projects-fabian',
 		className: 'lg:row-span-3 xl:col-span-4',
 		isPrivate: true,
 		index: 3,
