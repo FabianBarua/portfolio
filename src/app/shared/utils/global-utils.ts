@@ -66,7 +66,7 @@ export const Projects: IProjectCard[] = [
     id: uuid(),
     project_name: 'Alphaplay',
     description: 'projects-section.projects.alphaplay',
-    screenShot: zomoIG,
+    screenShot: alphaplayWeb,
     demoLink: 'https://alphaplay.tv',
     className: 'lg:row-span-2 xl:col-span-3',
     isPrivate: false,
@@ -158,7 +158,7 @@ export const DevTools: IDevToolsElement[] = [
   {
     id: uuid(),
     name: 'CorelDraw',
-    icon: '/logos/corel.svg'
+    icon: '/logos/corel2.svg'
   },
   {
     id: uuid(),
