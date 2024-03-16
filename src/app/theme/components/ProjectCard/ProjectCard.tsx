@@ -12,7 +12,6 @@ const ProjectCard: FC<IProjectCard> = ({
   technologies,
   screenShot,
   demoLink,
-  demoLinkAlt,
   className,
   isPrivate = false,
   index
@@ -20,8 +19,11 @@ const ProjectCard: FC<IProjectCard> = ({
   const [ref, hovering] = useHover()
   const { t } = useTranslation('global')
   return (
-    <motion.div
+    <motion.a
       key={id}
+      href={demoLink}
+      target='_blank'
+      rel='noreferrer'
       ref={ref}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
@@ -39,20 +41,12 @@ const ProjectCard: FC<IProjectCard> = ({
           </span>
         </div>
         {demoLink && (
-          <a
+          <button
             className='p-2 border-2 border-dusky dark:border-moonlit opacity-40 rounded-full absolute top-6 right-6 lg:top-8 lg:right-8 cursor-pointer hover:bg-dusky hover:text-white dark:hover:bg-moonlit dark:hover:text-dusky transition-colors duration-150 z-[1]'
-            href={
-              demoLinkAlt &&
-              new URLSearchParams(window.location.search).get('x') === '1'
-                ? demoLinkAlt
-                : demoLink
-            }
-            target='_blank'
-            rel='noreferrer'
             title={`${project_name} demo`}
           >
             <MdArrowOutward />
-          </a>
+          </button>
         )}
         <div className='flex flex-col gap-1 z-[1]'>
           <h3 className='text-2xl font-bold'>{project_name}</h3>
@@ -68,7 +62,7 @@ const ProjectCard: FC<IProjectCard> = ({
         <img
           className={`absolute   ${
             hovering ? 'saturate-100' : 'saturate-50'
-          }  -right-10 w-full top-48 rounded-2xl object-cover z-[1] transition-all duration-300 lg:-right-12 lg:top-48 ${
+          }  w-full top-48 rounded-2xl object-cover z-[1] transition-all duration-300 lg:-right-12  lg:top-48 ${
             hovering && 'scale-[1.025] '
           }`}
           src={screenShot}
@@ -76,7 +70,7 @@ const ProjectCard: FC<IProjectCard> = ({
           title='Project screenshot'
         />
       </div>
-    </motion.div>
+    </motion.a>
   )
 }
 

@@ -28,23 +28,21 @@ const Header = () => {
           >
             <LuLanguages />
           </button>
-          {theme === 'light' ? (
-            <button title='Switch to dark theme' onClick={toggleTheme}>
-              <MoonIcon className='w-6 h-6 fill-current text-[#2f3133] active:rotate-[360deg] transition-all duration-300' />
-            </button>
-          ) : (
-            <button title='Switch to white theme' onClick={toggleTheme}>
-              <SunIcon className='w-6 h-6 fill-current text-sun-beam active:rotate-[360deg] transition-all duration-300' />
-            </button>
-          )}
+          {theme === 'light'
+            ? (
+              <button title='Switch to dark theme' onClick={toggleTheme}>
+                <MoonIcon className='w-6 h-6 fill-current text-[#2f3133] active:rotate-[360deg] transition-all duration-300' />
+              </button>
+              )
+            : (
+              <button title='Switch to white theme' onClick={toggleTheme}>
+                <SunIcon className='w-6 h-6 fill-current text-sun-beam active:rotate-[360deg] transition-all duration-300' />
+              </button>
+              )}
           <a
             className='w-auto h-7 px-4 font-medium flex items-center gap-2 bg-dusky text-moonlit rounded-3xl dark:text-dusky dark:bg-moonlit lg:h-10 lg:px-6 cursor-pointer active:scale-[1.1] transition-all duration-300'
-            href={
-              new URLSearchParams(window.location.search).get('x') === '1'
-                ? 'https://bit.ly/cv-fabian'
-                : 'https://bit.ly/cv-fabianbarua'
-            }
-            target='_blank'
+            href='https://bit.ly/cv-fabian'
+            target='_blank' rel='noreferrer'
           >
             <GrCloudDownload />
             <div className='flex items-center'>

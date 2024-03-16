@@ -20,7 +20,7 @@ import alphasat from '../../../assets/alphasat.svg'
 import zomoIG from '../../../assets/zomoIG.webp'
 import quantaWeb from '../../../assets/quantaWeb.webp'
 import alphaplayWeb from '../../../assets/alphaplayWeb.webp'
-import proyectsBG from '../../../assets/proyectsBG.webp'
+import projectsBG from '../../../assets/projectsBG.webp'
 
 export const Projects: IProjectCard[] = [
   {
@@ -29,7 +29,7 @@ export const Projects: IProjectCard[] = [
     description: 'projects-section.projects.zomo',
     screenShot: zomoIG,
     demoLink: 'https://www.instagram.com/zomoofficial/',
-    className: 'lg:row-span-3 xl:col-span-4 h-full',
+    className: 'lg:row-span-2 xl:col-span-3 h-full',
     index: 1,
     technologies: ['Photoshop', 'After effects', 'Premiere Pro']
   },
@@ -40,19 +40,18 @@ export const Projects: IProjectCard[] = [
     description: 'projects-section.projects.quanta',
     screenShot: quantaWeb,
     demoLink: 'https://quanta.com.py/',
-    className: 'lg:row-span-2 xl:col-span-4',
+    className: 'lg:row-span-2 xl:col-span-5',
     index: 2,
     technologies: ['Photoshop', 'Figma', 'JS', 'CSS', 'Video Edits', 'Corel']
   },
 
   {
     id: uuid(),
-    project_name: 'Proyects',
-    description: 'projects-section.projects.proyects',
-    screenShot: proyectsBG,
-    demoLink: 'https://bit.ly/projects-fabian',
-    demoLinkAlt: 'https://bit.ly/all-projects-fabian',
-    className: 'lg:row-span-3 xl:col-span-4',
+    project_name: 'Projects',
+    description: 'projects-section.projects.projects',
+    screenShot: projectsBG,
+    demoLink: 'https://bit.ly/all-projects-fabian',
+    className: 'lg:row-span-2 xl:col-span-5',
     isPrivate: true,
     index: 3,
     technologies: [
@@ -67,9 +66,9 @@ export const Projects: IProjectCard[] = [
     id: uuid(),
     project_name: 'Alphaplay',
     description: 'projects-section.projects.alphaplay',
-    screenShot: alphaplayWeb,
+    screenShot: zomoIG,
     demoLink: 'https://alphaplay.tv',
-    className: 'lg:row-span-2 xl:col-span-4',
+    className: 'lg:row-span-2 xl:col-span-3',
     isPrivate: false,
     index: 3,
     technologies: ['Photoshop', 'Blender', 'After Effects', 'Illustrator']

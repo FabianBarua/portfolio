@@ -7,23 +7,23 @@ import 'animate.css'
 import { useTranslation } from 'react-i18next'
 import { useTranslateStore } from './shared/stores/useTranslateStore.ts'
 
-function App() {
-	const lang = useTranslateStore(state => state.lang)
-	const theme = useThemeStore(state => state.theme)
-	const { i18n } = useTranslation('global')
-	const [isLoading, setIsLoading] = useState(true)
+function App () {
+  const lang = useTranslateStore(state => state.lang)
+  const theme = useThemeStore(state => state.theme)
+  const { i18n } = useTranslation('global')
+  const [isLoading, setIsLoading] = useState(true)
 
-	useEffect(() => {
-		i18n.changeLanguage(lang)
-	}, [lang])
+  useEffect(() => {
+    i18n.changeLanguage(lang)
+  }, [lang])
 
-	useEffect(() => {
-		setIsLoading(true)
-		applyThemePreference(theme)
-		setIsLoading(false)
-	}, [theme])
+  useEffect(() => {
+    setIsLoading(true)
+    applyThemePreference(theme)
+    setIsLoading(false)
+  }, [theme])
 
-	return <>{!isLoading && lang ? <Home /> : null}</>
+  return <>{!isLoading && lang ? <Home /> : null}</>
 }
 
 export default App
