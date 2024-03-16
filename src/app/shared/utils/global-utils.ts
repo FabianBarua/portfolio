@@ -158,7 +158,7 @@ export const DevTools: IDevToolsElement[] = [
   {
     id: uuid(),
     name: 'CorelDraw',
-    icon: '/logos/corel2.svg'
+    icon: '/logos/corel.svg'
   },
   {
     id: uuid(),
