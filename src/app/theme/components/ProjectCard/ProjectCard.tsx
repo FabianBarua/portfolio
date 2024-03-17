@@ -1,10 +1,12 @@
-import { FC } from 'react'
+import { FC, useContext } from 'react'
 import { ImStack } from 'react-icons/im'
 import { MdArrowOutward } from 'react-icons/md'
 import { IProjectCard } from '../../../shared/models/global-interface.ts'
 import { useHover } from '@uidotdev/usehooks'
 import { motion } from 'framer-motion'
 import { useTranslation } from 'react-i18next'
+import { AnalyticsContext } from '../../../shared/context/analytics.tsx'
+
 const ProjectCard: FC<IProjectCard> = ({
   id,
   project_name,
@@ -18,6 +20,16 @@ const ProjectCard: FC<IProjectCard> = ({
 }) => {
   const [ref, hovering] = useHover()
   const { t } = useTranslation('global')
+  const reactGA  = useContext(AnalyticsContext)
+  
+  const handleClick = ()=>{
+    reactGA.event({
+      category: "Proyectos",
+      action: "click",
+      label: project_name
+    });
+  }
+
   return (
     <motion.a
       key={id}
@@ -30,6 +42,7 @@ const ProjectCard: FC<IProjectCard> = ({
       transition={{ delay: index * 0.1, duration: 0.3 }}
       viewport={{ once: true }}
       className={`relative flex flex-col rounded-3xl bg-white p-6 gap-3 border-2 border-transparent overflow-hidden row-span-1 col-span-8 dark:bg-raisin-black lg:p-8 ${className}`}
+      onClick={handleClick}
     >
       <div className='flex flex-col gap-3'>
         <div className='flex items-center gap-3 opacity-50 z-[1]'>

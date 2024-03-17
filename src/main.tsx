@@ -6,11 +6,14 @@ import { I18nextProvider } from 'react-i18next'
 import i18next from './i18n.ts'
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { AnalyticsProvider } from './app/shared/context/analytics';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
 		<I18nextProvider i18n={i18next}>
-			<App />
+			<AnalyticsProvider>
+				<App />
+			</AnalyticsProvider>
 		</I18nextProvider>
 		<Analytics />
 		<SpeedInsights />
