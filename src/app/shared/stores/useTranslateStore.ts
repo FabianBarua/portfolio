@@ -8,7 +8,7 @@ interface ITranslateStore {
 }
 
 export const useTranslateStore = create<ITranslateStore>(set => ({
-	lang: localStorage.getItem('lang') || 'en',
+	lang: localStorage.getItem('lang') || 'es',
 	setLang: (lang: string) => set(() => ({ lang })),
 	showTranslateToggle: false,
 	setShowTranslateToggle: (showToggle: boolean) =>

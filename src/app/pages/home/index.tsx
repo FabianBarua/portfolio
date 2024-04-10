@@ -54,7 +54,7 @@ const Home = () => {
 		>
 			<div className='w-full flex items-center justify-center mt-16 lg:mt-[3rem] fixed z-20'>
 				{showTranslateToggle && (
-					<div className='w-full h-full relative max-w-5xl px-5 xl:max-w-7xl '>
+					<div className='w-full h-full relative max-w-5xl px-5 xl:max-w-6xl '>
 						<div className='w-auto h-auto absolute flex flex-col gap-2 px-5 py-4 -top-1 z-20 right-36 lg:right-[15rem] lg:top-4 bg-white dark:bg-raisin-black rounded-xl'>
 							<button
 								title='English'
@@ -75,8 +75,8 @@ const Home = () => {
 				)}
 			</div>
 			<Header />
-			<main className='w-full flex flex-col gap-10 items-center max-w-5xl px-5 xl:max-w-7xl mt-[5.5rem]'>
-				<section className='w-full grid auto-rows-[192px] grid-cols-6 gap-4'>
+			<main className='w-full flex flex-col gap-10 items-center max-w-5xl px-5 xl:max-w-6xl mt-[5.5rem]'>
+				<section className='w-full grid auto-rows-[172px] grid-cols-6 gap-4'>
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
@@ -101,7 +101,7 @@ const Home = () => {
 							<div className='flex flex-wrap items-center gap-2 mt-1 lg:gap-3'>
 								<a
 									className='flex items-center font-medium bg-moonlit px-3 py-2 rounded-lg text-dusky gap-2 active:scale-[1.1] transition-transform duration-300'
-									href='https://github.com/FabianBarua'
+									href='https://github.com/fabianbarua'
 									target='_blank'
 									rel='noreferrer'
 									title='GitHub'
@@ -135,7 +135,7 @@ const Home = () => {
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ delay: 0.25, duration: 0.3 }}
 						viewport={{ once: true }}
-						className='row-span-1 col-span-6 rounded-3xl bg-white relative flex flex-col overflow-hidden border-2 border-transparent gap-2 p-7 dark:bg-raisin-black xl:col-span-2 lg:p-10'
+						className='row-span-1 col-span-6 rounded-3xl bg-white relative flex flex-col overflow-hidden border-2 border-transparent gap-2 p-7 dark:bg-raisin-black xl:col-span-2 lg:p-7'
 					>
 						<h2 className='text-2xl font-bold z-[1]'>
 							{t('about-section.title')}
@@ -147,13 +147,13 @@ const Home = () => {
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						transition={{ delay: isMobile ? 0.15 : 0.3, duration: 0.3 }}
+						transition={{ delay: isMobile ? 0 : 0.3, duration: 0.3 }}
 						viewport={{ once: true }}
 						className='row-span-1 col-span-3 rounded-3xl bg-white relative flex flex-col overflow-hidden border-2 border-transparent gap-2 items-center justify-center dark:bg-raisin-black xl:col-span-1'
 					>
 						<p className='text-7xl z-[1] font-bold flex items-center gap-1'>
 							<span>+</span>
-							<AnimatedCounter from={0} to={4} />
+							<AnimatedCounter from={0} to={3} />
 						</p>
 						<p className='text-sm font-semibold max-w-fit opacity-70 z-[1]'>
 							{t('experience-box.title')}
@@ -163,7 +163,7 @@ const Home = () => {
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						transition={{ delay: isMobile ? 0.2 : 0.35, duration: 0.3 }}
+						transition={{ delay: isMobile ? 0 : 0.35, duration: 0.3 }}
 						viewport={{ once: true }}
 						className='row-span-1 col-span-3 rounded-3xl bg-white dark:bg-raisin-black overflow-hidden border-2 border-transparent xl:col-span-1 flex items-center justify-center relative'
 					>
@@ -173,21 +173,16 @@ const Home = () => {
 							alt='Location'
 							title='Location'
 						/>
-						<img
-							className='w-11 z-[2]'
-							src={face}
-							alt='memoji'
-							title='memoji'
-						/>
-						<div className='w-24 h-24 bg-[#98d0ff] absolute z-[1] rounded-full bg-opacity-30 border-2 border-white animate__animated animate__pulse animate__infinite infinite animate__fast' />
+						<img className='w-8 z-[2]' src={face} alt='memoji' title='memoji' />
+						<div className='w-20 h-20 bg-[#98d0ff] absolute z-[1] rounded-full bg-opacity-30 border-2 border-white animate__animated animate__pulse animate__infinite infinite animate__fast' />
 						<motion.div
 							initial={{ opacity: 0 }}
 							animate={{ opacity: 1 }}
 							exit={{ opacity: 0 }}
-							className='w-full h-10 backdrop-blur-sm absolute left-0 bottom-0 z-[2] flex items-center justify-center text-left text-opacity-70'
+							className='w-full h-8 backdrop-blur-sm absolute left-0 bottom-0 z-[2] flex items-center justify-center text-left text-opacity-70'
 						>
 							<span className='text-xs font-medium'>
-								{t('location-box.title')} 🇵🇾
+								{t('location-box.title')} 🇲🇽
 							</span>
 						</motion.div>
 					</motion.div>
@@ -196,7 +191,7 @@ const Home = () => {
 					<motion.h1
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						transition={{ delay: isMobile ? 0 : 0.4, duration: 0.3 }}
+						transition={{ delay: isMobile ? 0 : 0.25, duration: 0.3 }}
 						viewport={{ once: true }}
 						className='text-3xl font-semibold'
 					>
@@ -205,7 +200,7 @@ const Home = () => {
 					<motion.p
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						transition={{ delay: isMobile ? 0 : 0.5, duration: 0.3 }}
+						transition={{ delay: isMobile ? 0 : 0.25, duration: 0.3 }}
 						viewport={{ once: true }}
 						className='opacity-70'
 					>
@@ -213,8 +208,8 @@ const Home = () => {
 					</motion.p>
 				</header>
 				<section className='w-full grid auto-rows-[380px] lg:auto-rows-[140px] grid-cols-8 gap-4'>
-					{Projects.map((project: IProjectCard, index) => {
-						return <ProjectCard key={index} {...project} />
+					{Projects.map((project: IProjectCard) => {
+						return <ProjectCard {...project} />
 					})}
 				</section>
 				<header className='w-full flex flex-col gap-2 text-center'>
@@ -241,7 +236,7 @@ const Home = () => {
 					<motion.div
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
-						transition={{ delay: 0.2, duration: 0.5 }}
+						transition={{ delay: isMobile ? 0 : 0.1, duration: 0.5 }}
 						viewport={{ once: true }}
 						className='w-full h-full relative inline-flex flex-nowrap bg-white dark:bg-raisin-black rounded-3xl items-center justify-between px-10 overflow-hidden'
 					>
@@ -271,9 +266,9 @@ const Home = () => {
 					</motion.p>
 				</header>
 				<section className='w-full grid auto-rows-[260px] grid-cols-8 gap-4'>
-					{Experiences.map((experience: IExperienceCard, index) => {
-						return <ExperienceCard key={index} {...experience} />
-					})}
+					{Experiences.map((experience: IExperienceCard) => (
+						<ExperienceCard {...experience} />
+					))}
 				</section>
 			</main>
 			<Footer />
