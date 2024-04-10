@@ -17,21 +17,34 @@ import alphaplay from '../../../assets/alphaplay.svg'
 import alphasat_bg from '../../../assets/alphasat_bg.webp'
 import alphasat from '../../../assets/alphasat.svg'
 
-import zomoIG from '../../../assets/zomoIG.webp'
-import quantaWeb from '../../../assets/quantaWeb.webp'
-import alphaplayWeb from '../../../assets/alphaplayWeb.webp'
-import projectsBG from '../../../assets/projectsBG.webp'
+import graphicBG from '../../../assets/REZ-1.jpg'
+import quantaWeb from '../../../assets/REZ-3.jpg'
+import alphaplayWeb from '../../../assets/REZ-4.jpg'
+import projectsBG from '../../../assets/REZ-2.jpg'
 
 export const Projects: IProjectCard[] = [
   {
     id: uuid(),
-    project_name: 'Zomo Paraguay',
-    description: 'projects-section.projects.zomo',
-    screenShot: zomoIG,
-    demoLink: 'https://www.instagram.com/zomoofficial/',
+    project_name: 'projects-section.names.graphic',
+    variation : true,
+    description: 'projects-section.projects.graphic',
+    screenShot: graphicBG,
+    demoLink: 'https://drive.google.com/drive/u/1/folders/1l-t2g-tUKtDJ2UvH0Tl1qtzb414VO6JH',
     className: 'lg:row-span-2 xl:col-span-3 h-full',
     index: 1,
-    technologies: ['Photoshop', 'After effects', 'Premiere Pro']
+    technologies: ['Photoshop', 'After effects', 'Blender 3D', '...']
+  },
+
+  {
+    id: uuid(),
+    project_name: 'projects-section.names.programming',
+    variation : true,
+    description: 'projects-section.projects.programming',
+    screenShot: projectsBG,
+    demoLink: 'https://projects-fb.vercel.app/',
+    className: 'lg:row-span-2 xl:col-span-5',
+    index: 2,
+    technologies: ['React', 'NextJS', 'TailwindCSS', 'NodeJS', 'Python', 'Bootstrap', 'PHP', 'HTML', 'CSS', 'JavaScript', '...']
   },
 
   {
@@ -39,18 +52,7 @@ export const Projects: IProjectCard[] = [
     project_name: 'Quanta',
     description: 'projects-section.projects.quanta',
     screenShot: quantaWeb,
-    demoLink: 'https://quanta.com.py/',
-    className: 'lg:row-span-2 xl:col-span-5',
-    index: 2,
-    technologies: ['Photoshop', 'Figma', 'JS', 'CSS', 'Video Edits', 'Corel']
-  },
-
-  {
-    id: uuid(),
-    project_name: 'Projects',
-    description: 'projects-section.projects.projects',
-    screenShot: projectsBG,
-    demoLink: 'https://bit.ly/all-projects-fabian',
+    demoLink: 'https://quanta.com.py',
     className: 'lg:row-span-2 xl:col-span-5',
     isPrivate: true,
     index: 3,
@@ -122,8 +124,18 @@ export const DevTools: IDevToolsElement[] = [
   },
   {
     id: uuid(),
+    name: 'C++',
+    icon: '/logos/cplus.svg'
+  },
+  {
+    id: uuid(),
     name: 'After-Effects',
     icon: '/logos/ae.svg'
+  },
+  {
+    id: uuid(),
+    name: 'React',
+    icon: '/logos/react.svg'
   },
   {
     id: uuid(),
@@ -132,8 +144,13 @@ export const DevTools: IDevToolsElement[] = [
   },
   {
     id: uuid(),
-    name: 'InDesign',
-    icon: '/logos/indesign.svg'
+    name: 'Astro',
+    icon: '/logos/astro.svg'
+  },
+  {
+    id: uuid(),
+    name: 'NextJS',
+    icon: '/logos/next.svg'
   },
   {
     id: uuid(),
@@ -144,11 +161,21 @@ export const DevTools: IDevToolsElement[] = [
     id: uuid(),
     name: 'Figma',
     icon: '/logos/figma.svg'
+  },  
+  {
+    id: uuid(),
+    name: 'Tailwind CSS',
+    icon: '/logos/tailwindcss.svg'
   },
   {
     id: uuid(),
     name: 'Illustrator',
     icon: '/logos/illustrator.svg'
+  },  
+  {
+    id: uuid(),
+    name: 'Javascript',
+    icon: '/logos/javascript.svg'
   },
   {
     id: uuid(),

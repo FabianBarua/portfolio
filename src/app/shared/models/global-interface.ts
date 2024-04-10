@@ -11,6 +11,7 @@ export interface IExperienceCard {
 export interface IProjectCard {
   id: string
   project_name: string
+  variation ?: boolean 
   description: string
   technologies: string[]
   index: number

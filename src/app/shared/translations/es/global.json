@@ -15,10 +15,14 @@
     "work-experience": "Experiencia laboral",
     "personal-experience": "Experiencia personal",
     "projects": {
-      "zomo": "Lanzamiento de nuevos productos.",
+      "graphic": "Proyectos de diseño grafico.",
       "quanta": "Innovación en tecnología electrónica.",
       "alphaplay": "Marca lider en receptores de Tv Brasilera.",
-      "projects": "Mis proyectos más recientes."
+      "programming": "Mis proyectos de programacion más recientes."
+    },
+    "names" : {
+      "graphic": "Diseño Gráfico",
+      "programming" : "Programación Web"
     }
   },
   "technologies-section": {
@@ -44,9 +48,9 @@
     }
   },
   "others-translations": {
-    "degree": "Diseñador Gráfico - Editor de videos",
+    "degree": "Diseñador Gráfico - Programador Web",
     "visit": "Visita",
     "copy-right": "Todos los derechos reservados",
-    "last-update": "Última actualización: 28 de Enero de 2024"
+    "last-update": "Última actualización: 10 de Abril de 2024"
   }
 }

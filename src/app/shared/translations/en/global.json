@@ -15,10 +15,14 @@
     "work-experience": "Work Experience",
     "personal-experience": "Personal Experience",
     "projects": {
-      "zomo": "Launch new products",
+      "graphic": "Graphic design projects.",
       "quanta": "Innovation in electronic technology.",
       "alphaplay": "Leading brand in Brazilian TV receivers.",
-      "projects": "My most recent projects."
+      "programming": "My most recent programming projects."
+    },
+    "names" : {
+      "graphic": "Graphic Design",
+      "programming" : "Web Programming"
     }
   },
   "technologies-section": {
@@ -44,9 +48,9 @@
     }
   },
   "others-translations": {
-    "degree": "Graphic Designer - Video Editor",
+    "degree": "Graphic Designer - Web programmer",
     "visit": "Visit",
     "copy-right": "All rights reserved",
-    "last-update": "Last update: January 28, 2024"
+    "last-update": "Last update: April 10, 2024"
   }
 }

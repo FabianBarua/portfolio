@@ -10,6 +10,7 @@ import { AnalyticsContext } from '../../../shared/context/analytics.tsx'
 const ProjectCard: FC<IProjectCard> = ({
   id,
   project_name,
+  variation,
   description,
   technologies,
   screenShot,
@@ -26,7 +27,7 @@ const ProjectCard: FC<IProjectCard> = ({
     reactGA.event({
       category: "Proyectos",
       action: "click",
-      label: project_name
+      label: variation ? t(project_name) : project_name
     });
   }
 
@@ -56,13 +57,17 @@ const ProjectCard: FC<IProjectCard> = ({
         {demoLink && (
           <button
             className='p-2 border-2 border-dusky dark:border-moonlit opacity-40 rounded-full absolute top-6 right-6 lg:top-8 lg:right-8 cursor-pointer hover:bg-dusky hover:text-white dark:hover:bg-moonlit dark:hover:text-dusky transition-colors duration-150 z-[1]'
-            title={`${project_name} demo`}
+            title={`${
+              variation ? t(project_name) : project_name
+            } demo`}
           >
             <MdArrowOutward />
           </button>
         )}
         <div className='flex flex-col gap-1 z-[1]'>
-          <h3 className='text-2xl font-bold'>{project_name}</h3>
+          <h3 className='text-2xl font-bold'>{
+            variation ? t(project_name) : project_name
+          }</h3>
           <p className='text-base opacity-70'>{t(description)}</p>
           <div className='flex items-center gap-2 opacity-90 font-medium'>
             {technologies.map(tech => (
@@ -73,13 +78,11 @@ const ProjectCard: FC<IProjectCard> = ({
           </div>
         </div>
         <img
-          className={`absolute   ${
-            hovering ? 'saturate-100' : 'saturate-50'
-          }  w-full top-48 rounded-2xl object-cover z-[1] transition-all duration-300 lg:-right-12  lg:top-48 ${
+          className={`absolute  w-full top-48 rounded-2xl object-cover z-[1] transition-all duration-300 lg:-right-12  lg:top-48 ${
             hovering && 'scale-[1.025] '
           }`}
           src={screenShot}
-          alt={project_name}
+          alt={ variation ? t(project_name) : project_name}
           title='Project screenshot'
         />
       </div>
