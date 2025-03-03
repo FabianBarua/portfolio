@@ -182,7 +182,7 @@ const Home = () => {
 							className='w-full h-8 backdrop-blur-sm absolute left-0 bottom-0 z-[2] flex items-center justify-center text-left text-opacity-70'
 						>
 							<span className='text-xs font-medium'>
-								{t('location-box.title')} 🇲🇽
+								{t('location-box.title') 
 							</span>
 						</motion.div>
 					</motion.div>
